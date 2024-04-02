@@ -12,7 +12,7 @@ const PropertyBadges = ({ properties }) => {
   };
 
   return (
-    <div className="flex flex-wrap justify-center mt-2 mx-2">
+    <div className="flex flex-wrap justify-center mx-2">
       {properties.map((property, index) => (
         <a
           key={index}

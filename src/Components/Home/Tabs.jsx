@@ -31,7 +31,7 @@ const Tabs = () => {
           <a href="#" className={`inline-block w-full p-4 border-s-0 border-gray-200 dark:border-gray-700 rounded-e-lg ${activeTab === 'CorrelationMatrix' ? 'bg-blue-800 text-white' : 'hover:text-gray-700 hover:bg-gray-50 focus:outline-none focus:bg-blue-700 focus:text-white dark:hover:text-white dark:bg-gray-800 dark:hover:bg-gray-700'}`} onClick={() => renderComponent('CorrelationMatrix')}>Correlation Matrix</a>
         </li>
       </ul>
-      <div className="mt-8">
+      <div className="mt-4">
         {activeTab === 'PCP' && <PCP />}
         {activeTab === 'Cartograph' && <Cartograph />}
         {activeTab === 'Histogram' && <Histogram />}
