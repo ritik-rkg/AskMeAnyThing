@@ -9,8 +9,8 @@ const Home = () => {
     <div className="font-poppins">
       <Navbar/>
       <Tabs/>
-      {/* <PCP/> */}
-      <Try/>
+      <PCP/>
+      {/* <Try/> */}
       {/* <div className="bg-blue-gray-50 h-screen w-full "></div> */}
       <Footer/>
     </div>
