@@ -54,7 +54,7 @@ const DropdownGroupedCat = () => {
         className="text-white w-64 bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-base px-10 py-2.5 text-center inline-flex items-center justify-between dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
         type="button"
       >
-        Categorical Fields
+        Multi-Categorical
         <svg
           className="w-2.5 h-2.5 ms-3"
           aria-hidden="true"
