@@ -45,16 +45,29 @@ const DropdownGroupedCat = () => {
     setIsOpen(!isOpen);
   };
 
+  // State to store the checked checkboxes
+  const [checkedItems, setCheckedItems] = useState([]);
+
+  // Function to handle checkbox change
+  const handleCheckboxChange = (event) => {
+    const { value } = event.target;
+    if (checkedItems.includes(value)) {
+      setCheckedItems(checkedItems.filter(item => item !== value));
+    } else {
+      setCheckedItems([...checkedItems, value]);
+    }
+  };
+
   return (
     <div className="relative inline-block text-left">
       {/* Dropdown toggle */}
       <button
         id="dropdownBgHoverButton"
         onClick={toggleDropdown}
-        className="text-white w-64 bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-base px-10 py-2.5 text-center inline-flex items-center justify-between dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+        className="text-white w-64 bg-blue-600 hover:bg-blue-700 font-medium rounded-lg text-base px-4 py-2.5 text-center inline-flex items-center justify-between dark:bg-blue-600 dark:hover:bg-blue-700"
         type="button"
       >
-        Multi-Categorical
+        Multi-Categorical Fields
         <svg
           className="w-2.5 h-2.5 ms-3"
           aria-hidden="true"
@@ -74,15 +87,17 @@ const DropdownGroupedCat = () => {
 
       {/* Dropdown menu */}
       {isOpen && (
-        <div id="dropdownBgHover" className="z-10 absolute w-64 max-h-72 overflow-y-auto bg-white rounded-lg shadow dark:bg-gray-700">
-          <ul className="p-3 space-y-1 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownBgHoverButton">
+        <div id="dropdownBgHover" className="z-10 absolute w-64 bg-white rounded-lg shadow dark:bg-gray-700">
+          <ul className="max-h-72 overflow-y-auto p-3 space-y-1 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownBgHoverButton">
           {DropdownItems.map((item, index) => (
             <li key={index}>
               <div className="flex items-center p-2 rounded hover:bg-gray-100 dark:hover:bg-gray-600">
                 <input
                   id={`checkbox-item-${item}`}
                   type="checkbox"
-                  value=""
+                  value={item}
+                  checked={checkedItems.includes(item)} // Check if the item is in the checkedItems array
+                  onChange={handleCheckboxChange} // Call the handleCheckboxChange function on change
                   className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded dark:bg-gray-600 dark:border-gray-500"
                 />
                 <label 
@@ -97,6 +112,13 @@ const DropdownGroupedCat = () => {
           ))
           }
           </ul>
+          <div className='flex justify-center text-center py-2 rounded-lg'>
+                <button 
+                onClick={toggleDropdown}
+                className='text-blue-700 hover:text-green-700 hover:bg-green-50 font-medium text-underline shadow-md px-4 rounded bg-cyan-50 text-sm text-center dark:border-blue-500 dark:text-blue-500 dark:hover:text-white dark:hover:bg-blue-500 dark:focus:ring-blue-800'>
+                    Done
+                </button>
+          </div>
         </div>
       )}
     </div>
