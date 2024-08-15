@@ -1,5 +1,3 @@
-# Walmart Sparkathon 2024: Warehouse Location Prediction Model
-
 ## Introduction
 
 Welcome to the repository for our project submitted to the Walmart Sparkathon 2024! 🚀
