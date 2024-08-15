@@ -9,6 +9,13 @@ module.exports = withMT({
         poppins: ["Poppins", 'sans-serif'],
       },
     },
+    colors: {
+      'mycolor': '#FFCD29',
+      'mycolor2':'#303845',
+      'mycolor3':'#8770FE',
+      'mycolorhover':'#6450CD',
+      'mycolorhover2':'#6450CD'
+    },
   },
   plugins: [],
 });
