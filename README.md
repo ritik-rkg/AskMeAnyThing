@@ -13,7 +13,7 @@ Our project focuses on optimizing warehouse locations for Walmart by predicting 
 
 ## Demo Video
 
-Check out our demo video to see the project in action: [Walmart Sparkathon 2024: Warehouse Location Prediction Model Demo](#) *(Link to your YouTube video)*
+Check out our demo video to see the project in action: [Walmart Sparkathon 2024: Warehouse Location Prediction Model Demo](#)(https://youtu.be/YvM6wVqrztY)
 
 ## Team Members
 
