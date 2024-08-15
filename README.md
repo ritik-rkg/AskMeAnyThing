@@ -1,6 +1,6 @@
 ## Introduction
 
-Welcome to the repository for our project submitted to the Walmart Sparkathon 2024! 🚀
+Welcome to the repository for our project submitted to the Walmart Sparkathon! 🚀
 
 Our project focuses on optimizing warehouse locations for Walmart by predicting demand and minimizing costs across the supply chain. We developed a model that leverages data-driven insights to enhance supply chain efficiency, reduce operational costs, and improve overall customer satisfaction.
 
@@ -13,7 +13,7 @@ Our project focuses on optimizing warehouse locations for Walmart by predicting 
 
 ## Demo Video
 
-Check out our demo video to see the project in action: [Walmart Sparkathon 2024: Warehouse Location Prediction Model Demo](https://youtu.be/YvM6wVqrztY)
+Check out our demo video to see the project in action: [Walmart Sparkathon](https://youtu.be/YvM6wVqrztY)
 
 ## Team Members
 
