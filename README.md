@@ -13,14 +13,14 @@ Our project focuses on optimizing warehouse locations for Walmart by predicting 
 
 ## Demo Video
 
-Check out our demo video to see the project in action: [Walmart Sparkathon 2024: Warehouse Location Prediction Model Demo](#)(https://youtu.be/YvM6wVqrztY)
+Check out our demo video to see the project in action: [Walmart Sparkathon 2024: Warehouse Location Prediction Model Demo](https://youtu.be/YvM6wVqrztY)
 
 ## Team Members
 
-- [Member 1 Name](https://github.com/[GitHubUsername1])
-- [Member 2 Name](https://github.com/[GitHubUsername2])
-- [Member 3 Name](https://github.com/[GitHubUsername3])
-- [Member 4 Name](https://github.com/[GitHubUsername4])
+- [Kushal Partani]
+- [Siddharth Chauhan]
+- [Ritik Gupta]
+- [Shishir Shahi]
 
 ## License
 
